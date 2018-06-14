@@ -11,7 +11,17 @@
 |
 */
 
-
+Route::get('/', 'StrategieController@index');
 
 Route::get('/pattern/strategie', 'StrategieController@index');
+
+/*
+ * A FAIRE
+ */
 Route::get('/pattern/observer', 'ObserverController@index');
+Route::get('/pattern/decorateur', 'ObserverController@index');
+Route::get('/pattern/fabrique/abstraite', 'ObserverController@index');
+Route::get('/pattern/fabrique/normal', 'ObserverController@index');
+Route::get('/pattern/singleton', 'ObserverController@index');
+Route::get('/pattern/command', 'ObserverController@index');
+Route::get('/pattern/adapter', 'ObserverController@index');
